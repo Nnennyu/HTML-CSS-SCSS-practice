@@ -9,35 +9,57 @@
                 display:flex;
                 margin-left: auto;
                 margin-right: auto;
+                padding-top: 60px;
             }
-            #rcorners {
-                border-radius: 100px;
+            .topright {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                font-size: 18px;
+            }
+            .peg {
+                display: flex;
+                justify-content: center;
+                font: 16px arial, sans-serif;
+            }
+            .rcorners {
+                border-radius: 40%;
+                line-height: 34px;
+                height: 50px;
+                float: 100px;
                 padding: 20px;
-                width: 500px;
-                height: 20px;
+            }
+            .sub {
+                box-sizing: border-box;
+                border-width: 2px
+                padding: 0 16px;
+                margin: 11px 4px;
+                
             }
         </style>
     </head>
     <body>
-        <a href="https://about.google/">About</a>
-        <a href="https://store.google.com/">Store</a>
-        <div>
-            <a href="https://images.google.com/">Images</a>
-            <a href="https://www.google.com/advanced_search">Advanced Search</a>
-        </div>
+        <nav>
+          <a href="https://about.google/">About</a> |
+          <a href="https://store.google.com/">Store</a>
+          <div class="topright">
+              <a href="https://images.google.com/">Images</a> |
+              <a href="https://www.google.com/advanced_search">Advanced-search</a>
+          </div>
+        </nav>
         <br>
-
-        <img alt="Google celebrating Dilhan Eryurt" border="0" height="220"
+        <img alt="Google celebrating Dilhan Eryurt" height="220"
         src="https://www.google.com/logos/doodles/2020/celebrating-dilhan-eryurt-6540781627113472-l.png"
-            style="padding-top:0px;" title="Celebrating Dilhan Eryurt"
-            width="536" data-iml="1595219375641" data-atf="1" >
-        <br>
-        <form action="https://google.com/search">
-            <div id="rcorners"><input type="text" name="q" title="Search"></div><br>
-            <div>
+             title="Celebrating Dilhan Eryurt" width="536" data-iml="1595219375641" data-atf="1" >
+        
+        <form  action="https://google.com/search">
+            <div class="peg rcorners">
+                <input type="text" name="q" title="Search" autofocus role="combobox" maxlength="2048">
+            </div>            
+            <div class="peg sub">
                 <input type="submit" value="Google Search" >
                 <input type="submit" formation="https://www.google.com/doodles/" value="I'm Feeling Lucky">
             </div>
-        </form>
+            </form>
     </body>
 </html>

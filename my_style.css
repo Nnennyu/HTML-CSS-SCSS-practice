@@ -1,0 +1,32 @@
+img {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+.peg {
+    display: flex;
+    justify-content: center;
+    font: 16px arial, sans-serif;
+}
+.rcorners {
+    border-radius: 40%;
+    line-height: 34px;
+    height: 50px;
+    float: 100px;
+    padding: 20px;
+    size: 500px;
+}
+.sub {
+    box-sizing: border-box;
+    border-width: 2px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    
+}
